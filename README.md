@@ -1,19 +1,26 @@
-# Creative Engineering Portfolio
+# Creative Engineering Portfolio + Undergraduate Archive
 
-A responsive static portfolio built with HTML, CSS, and JavaScript. No build tools required.
+A GitHub Pages-ready static website. No frameworks or build step required.
 
-## Customize
-1. In `index.html`, replace `Your Name`, `YN`, and the introduction.
-2. Edit project titles, descriptions, and dates.
-3. Replace example project art with your own images (store them in `assets/`).
-4. Replace the email, LinkedIn, and GitHub URLs.
-5. Add your resume PDF at `assets/resume.pdf` or remove that link.
-6. Change the colors in `styles.css` under `:root`.
+## Pages
+- `index.html` — engineering portfolio and archive introduction at the bottom
+- `thesis.html` — dedicated anthropology thesis page, abstract, methods, reflection
+- `readings.html` — curated reading shelf with working category filters
+- `archive.html` — four-year undergraduate timeline and reflection
+- `styles.css` — shared editorial design
+- `script.js` — footer year and reading filters
+- `assets/` — your own images, resume and thesis PDF
 
-## Publish on GitHub Pages
-1. Create a public GitHub repository named `YOURUSERNAME.github.io`.
-2. Upload `index.html`, `styles.css`, `script.js`, and the `assets` folder to the repository root.
-3. Open Settings > Pages and choose Deploy from a branch, `main`, `/ (root)`.
-4. Visit `https://YOURUSERNAME.github.io` after deployment finishes.
+## Customize before publishing
+1. Replace `Your Name`, `YOUR NAME`, and `YN` throughout the HTML.
+2. Replace every `[placeholder]` with verified details; the site does not invent your thesis title, assigned readings, or biographical facts.
+3. Edit thesis abstract and reflective sections in `thesis.html`. Put the PDF at `assets/anthropology-thesis.pdf` and replace the PDF note with `<a href="assets/anthropology-thesis.pdf">Read thesis (PDF)</a>`.
+4. Add readings by duplicating `<article class="reading-entry">` in `readings.html`; set `data-category` to `anthropology`, `history`, or `design` and replace the placeholder link. Link to publisher pages, DOI pages, library catalogues, or legally shared versions; do not redistribute assigned copyrighted PDFs without permission.
+5. Edit each year of the timeline in `archive.html`.
+6. Add `assets/resume.pdf` or remove the resume link. Update email, GitHub and LinkedIn links in `index.html`.
+7. Optionally replace abstract project artwork with your own photos and CAD renders.
 
-The Google Fonts import requires internet access; system fonts are used as fallback.
+## Publish
+Create a public repository named `YOURUSERNAME.github.io` on GitHub. Upload the **contents** of this folder (not the enclosing folder) to the repository root. In Settings > Pages, choose Deploy from a branch > `main` > `/ (root)`. Visit `https://YOURUSERNAME.github.io` after deployment.
+
+The archive is deliberately placed below professional work on the homepage, with separate pages for deeper reading.
