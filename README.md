@@ -39,3 +39,10 @@ The portfolio owner is Nimet Yesil; team-member attributions are preserved on pr
 
 ## Scrapbook redesign
 The website uses layered paper cards, tape effects, archival stamps, warm textures, expressive serif typography, and original report imagery. All pages and semester chronology are preserved. Edit colors and styling in the final SCRAPBOOK section of `styles.css`. Fonts load from Google Fonts; local fallbacks are included.
+
+## Visual theme
+Fuchsia (#D71988), teal blue (#087E91), orange (#F36B2D), and warm paper (#FFF2E6). Arial is used throughout. Occasional rustic archival stickers are rendered with CSS and require no external image assets.
+
+Palette refresh: pastel pink #FFE8F2, light fuchsia #E66BB5, light orange #FFA276, teal #087E91. Arial throughout.
+
+Latest palette: seafoam #86CDBF, soft fuchsia #ECA0CB, soft orange #FFA276, pastel pink #FFE8F2.

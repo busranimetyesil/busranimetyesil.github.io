@@ -35,3 +35,58 @@ html{scroll-behavior:smooth}body.scrapbook{background-color:var(--paper);backgro
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.scrapbook .project-card,.scrapbook .project-photo{transition:none}}
 
 .resume-pending{opacity:.75;cursor:default}
+
+/* Nimet Yesil — fuchsia / teal / orange scrapbook palette, Arial throughout */
+:root{--paper:#fff2e6;--ink:#202d37;--orange:#f36b2d;--line:#d6aeb4;--muted:#615a61;--berry:#c51b80;--green:#087e91;--yellow:#ffb455;--fuchsia:#d71988;--teal:#087e91}
+html,body,button,input,textarea,select{font-family:Arial,Helvetica,sans-serif!important}
+.scrapbook h1,.scrapbook h2,.scrapbook h3,.scrapbook .wordmark,.scrapbook .page-title,.scrapbook .timeline h2,.scrapbook .reading-entry h2,.scrapbook .archive-index a strong,.archive-annotation,.scrapbook .archive-sticker,.scrapbook .page-stamp,.scrapbook .filter,.eyebrow,.semester-number,.card-index{font-family:Arial,Helvetica,sans-serif!important}
+.scrapbook h1,.scrapbook h2,.scrapbook h3{letter-spacing:-.055em;font-weight:800}
+.scrapbook h1 em,.scrapbook h2 em,.scrapbook .page-title em{font-style:normal;color:var(--fuchsia)}
+.scrapbook .wordmark{background:var(--fuchsia);box-shadow:4px 5px 0 var(--orange)}
+.scrapbook .wordmark .dot{color:#ffbd69}
+.scrapbook .about-section{background:#c9e9e7}
+.scrapbook .archive-intro{background:#f9d6e8}
+.scrapbook .experience-section{background:#086d80;color:#fff7ed}
+.scrapbook .project-card{border-color:#c59cae;box-shadow:8px 9px 0 rgba(8,126,145,.25)}
+.scrapbook .project-card:nth-child(even){box-shadow:8px 9px 0 rgba(215,25,136,.23)}
+.scrapbook .archive-index a{background:#fff9ed;border-color:#d59eae;box-shadow:5px 6px 0 #e8a5c5}
+.scrapbook .archive-index a:nth-child(even){background:#e3f4f0;box-shadow:5px 6px 0 #8ecbd0}
+.scrapbook .timeline article{background:#fff8ef;border-color:#d9a5bb;box-shadow:7px 9px 0 #e6b3d1}
+.scrapbook .timeline article:nth-child(even){background:#dff3f1;box-shadow:7px 9px 0 #8dcbd0}
+.scrapbook .timeline article:before{background:rgba(243,107,45,.46)}
+.scrapbook .reading-entry{border-color:#d6a3c1;box-shadow:5px 5px 0 #a6d5d7}
+.scrapbook .filter.active,.scrapbook .document-link{background:var(--fuchsia);border-color:var(--fuchsia)}
+.scrapbook .document-link:hover{background:var(--teal)}
+.scrapbook .feature-panel{background:#b9e3e1;color:#153b43}
+.scrapbook .feature-symbol{color:var(--fuchsia)}
+.scrapbook .round-link:hover{background:var(--teal);border-color:var(--teal)}
+.scrapbook .collage-stamp{background:var(--orange);color:#fff}
+.scrapbook .archive-sticker{background:#fff4df;border:3px double var(--teal);color:var(--teal);box-shadow:3px 5px 0 rgba(8,126,145,.2)}
+.scrapbook .page-stamp{color:var(--teal);border-color:var(--teal)}
+/* Occasional rustic stickers, styled as distressed archival labels. */
+.scrapbook .project-card:nth-child(2)::after{content:'HAND BUILT';position:absolute;right:-11px;top:-18px;transform:rotate(12deg);border:2px dashed #9c4b26;border-radius:50%;width:88px;height:88px;display:grid;place-items:center;text-align:center;background:#f7bc74;color:#693b28;font:700 11px/1.2 Arial,Helvetica,sans-serif;letter-spacing:.07em;box-shadow:3px 4px 0 rgba(90,53,33,.14);pointer-events:none;z-index:4}
+.scrapbook .project-card:nth-child(3)::after{content:'FIELD NOTE 03';position:absolute;right:-8px;top:-13px;transform:rotate(9deg);padding:13px 10px;background:#d6f0e7;border:2px dashed #267b80;color:#185a63;font:700 10px Arial,Helvetica,sans-serif;letter-spacing:.09em;box-shadow:3px 4px 0 rgba(20,80,90,.13);pointer-events:none;z-index:4}
+.scrapbook .project-card{position:relative}
+.scrapbook .reading-entry:nth-of-type(3n)::before{content:'ARCHIVED ✳';display:inline-block;background:#ffd19a;border:1px dashed #a96938;transform:rotate(-4deg);padding:5px 9px;margin-bottom:13px;color:#6d3b27;font:700 10px Arial,Helvetica,sans-serif;letter-spacing:.1em}
+@media(max-width:700px){.scrapbook .project-card:nth-child(2)::after{right:0;top:-13px;width:66px;height:66px;font-size:9px}.scrapbook .project-card:nth-child(3)::after{right:0}}
+
+/* 2026 pastel refresh: soft fuchsia, soft orange, pastel pink background */
+:root{--paper:#ffe8f2;--fuchsia:#e66bb5;--berry:#d85d9f;--orange:#ffa276;--yellow:#ffd3a8;--line:#e6b9d0}
+body.scrapbook{background:var(--paper)}
+.scrapbook .about-section{background:#d8f2f0}
+.scrapbook .archive-intro{background:#fbd8e9}
+.scrapbook .project-card{background:#fff4f9;border-color:#e3bbd2}
+.scrapbook .archive-index a{background:#fff2f8;border-color:#e4b6cd;box-shadow:5px 6px 0 #f2c5dc}
+.scrapbook .archive-index a:nth-child(even){background:#e8f7f5}
+.scrapbook .timeline article{background:#fff2f8;border-color:#e5b9d1;box-shadow:7px 9px 0 #f0c8df}
+.scrapbook .timeline article:nth-child(even){background:#e7f7f5}
+.scrapbook .reading-entry{background:#fff5fa;border-color:#e3bdd3}
+.scrapbook .collage-stamp{background:#ffa276;color:#603d39}
+.scrapbook .project-card:nth-child(2)::after{background:#ffd3ac}
+.scrapbook .reading-entry:nth-of-type(3n)::before{background:#ffe0bd}
+.scrapbook .archive-sticker{background:#fff0f6}
+.scrapbook .wordmark{color:#202d37}
+
+/* Seafoam and softened fuchsia palette update */
+:root{--teal:#86CDBF;--green:#86CDBF;--fuchsia:#ECA0CB;--berry:#D984B6}
+.scrapbook .archive-sticker{box-shadow:3px 5px 0 rgba(85,155,143,.18)}
