@@ -1,26 +1,41 @@
-# Creative Engineering Portfolio + Undergraduate Archive
+# Creative engineering portfolio + undergraduate archive
 
-A GitHub Pages-ready static website. No frameworks or build step required.
-
-## Pages
-- `index.html` — engineering portfolio and archive introduction at the bottom
-- `thesis.html` — dedicated anthropology thesis page, abstract, methods, reflection
-- `readings.html` — curated reading shelf with working category filters
-- `archive.html` — four-year undergraduate timeline and reflection
-- `styles.css` — shared editorial design
-- `script.js` — footer year and reading filters
-- `assets/` — your own images, resume and thesis PDF
-
-## Customize before publishing
-1. Replace `Your Name`, `YOUR NAME`, and `YN` throughout the HTML.
-2. Replace every `[placeholder]` with verified details; the site does not invent your thesis title, assigned readings, or biographical facts.
-3. Edit thesis abstract and reflective sections in `thesis.html`. Put the PDF at `assets/anthropology-thesis.pdf` and replace the PDF note with `<a href="assets/anthropology-thesis.pdf">Read thesis (PDF)</a>`.
-4. Add readings by duplicating `<article class="reading-entry">` in `readings.html`; set `data-category` to `anthropology`, `history`, or `design` and replace the placeholder link. Link to publisher pages, DOI pages, library catalogues, or legally shared versions; do not redistribute assigned copyrighted PDFs without permission.
-5. Edit each year of the timeline in `archive.html`.
-6. Add `assets/resume.pdf` or remove the resume link. Update email, GitHub and LinkedIn links in `index.html`.
-7. Optionally replace abstract project artwork with your own photos and CAD renders.
+This GitHub Pages site includes three engineering case studies and one academic essay, all based on the uploaded source documents.
 
 ## Publish
-Create a public repository named `YOURUSERNAME.github.io` on GitHub. Upload the **contents** of this folder (not the enclosing folder) to the repository root. In Settings > Pages, choose Deploy from a branch > `main` > `/ (root)`. Visit `https://YOURUSERNAME.github.io` after deployment.
+1. Create a public GitHub repository named `YOURUSERNAME.github.io`.
+2. Upload **the contents of this folder** to the repository root.
+3. Settings > Pages > Deploy from a branch > `main` > `/ (root)`.
+4. Wait for GitHub Pages deployment.
 
-The archive is deliberately placed below professional work on the homepage, with separate pages for deeper reading.
+## Edit before sharing
+- Replace `Your Name`, `YN`, the placeholder email and social links in `index.html` and page headers.
+- Add your own resume at `assets/resume.pdf` or remove the resume link.
+- `thesis.html` is a placeholder awaiting the actual study-abroad anthropology thesis.
+- `readings.html` and `archive.html` retain starter placeholder entries; verify or replace these before publishing.
+- The BookTok essay PDF includes instructor comments and feedback; review whether you want that version public.
+- The ES 50 report contains unfinished notes/comments; consider a cleaned public-facing version later.
+- Credit collaborators and check permissions before publishing team work or feedback.
+
+## Pages
+- `index.html`: homepage, featured work, archive
+- `robot.html`: ES 51 competition robot
+- `balsa.html`: structural beam
+- `whack.html`: ES 50 reaction game
+- `writing.html`: BookTok feminism essay
+- `thesis.html`, `readings.html`, `archive.html`: pre-existing archive sections
+
+## Assets
+All reports are bundled in `assets/projects/` and `assets/writing/`, with selected page previews under `assets/projects/`.
+
+
+## Semester archive
+The archive is organized newest to oldest, Senior Spring 2027 to Freshman Fall 2023.
+Courses supplied by Nimet are listed for Senior Fall 2026, Junior Spring 2026, and Freshman Fall 2023.
+Other semesters are placeholders, and the anthropology thesis remains a placeholder until uploaded.
+To edit courses or reflections, open `archive.html` and modify the relevant semester article.
+The portfolio owner is Nimet Yesil; team-member attributions are preserved on project pages.
+
+
+## Scrapbook redesign
+The website uses layered paper cards, tape effects, archival stamps, warm textures, expressive serif typography, and original report imagery. All pages and semester chronology are preserved. Edit colors and styling in the final SCRAPBOOK section of `styles.css`. Fonts load from Google Fonts; local fallbacks are included.
